@@ -12,6 +12,8 @@ function Menu() {
           <Nav.Link href='/about'>About Me</Nav.Link>
 
           <Nav.Link href='projects'>Projects</Nav.Link>
+
+          <Nav.Link href='projects'>Resume</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link href='https://github.com/jamesosull16'>

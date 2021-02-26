@@ -1,34 +1,25 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Menu from "../Menu";
 import ProjectCard from "../ProjectCards.js/index";
-import projects from "../../projects.json";
+import projects from "../../projects";
 import Wrapper from "../Wrapper/Wrapper";
 
-class Projects extends Component {
-  state = { projects };
+function Projects ()  {
+  
+const [stateProjects, setStateProjects] = useState(projects)
 
-//   navigateRepo = (id) => {
-//     const repoUrl = this.state.projects.map((project) => project.id);
-//   };
-
-  render() {
+  
     return (
       <div>
         <Menu />
         <Wrapper>
-          {this.state.projects.map((project) => (
-            <ProjectCard
-              id={project.id}
-              key={project.id}
-              image={project.image}
-              title={project.title}
-              description={project.description}
-            />
+          {stateProjects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
           ))}
         </Wrapper>
       </div>
     );
-  }
+  
 }
 
 export default Projects;

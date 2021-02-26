@@ -3,14 +3,7 @@ import Button from "react-bootstrap/Button";
 
 import "./style.css";
 
-function ProjectCard({
-  title,
-  image,
-  description,
-  id,
-  navigateRepo,
-  navigateApp,
-}) {
+function ProjectCard({ title, image, description, repoUrl, appUrl }) {
   return (
     <div className='card'>
       <div className='img-container'>
@@ -25,18 +18,16 @@ function ProjectCard({
 
       <Button
         className='button'
-        href={navigateRepo}
         variant='info'
-        onClick={() => navigateRepo(id)}
+        onClick={() => (window.location = repoUrl)}
       >
         <i className='fab fa-github' sz='3x'></i>
       </Button>
 
       <Button
         className='button'
-        href={navigateApp}
         variant='info'
-        onClick={() => navigateApp(id)}
+        onClick={() => (window.location = appUrl)}
       >
         <i class='fas fa-tablet-alt'></i>
       </Button>
