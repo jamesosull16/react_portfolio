@@ -1,7 +1,8 @@
-import escapeImg from "./images/escape.jpg";
-import dayplannerImg from "./images/dayplannerapp.jpg";
-import weatherImg from "./images/weather.jpg";
-import messageappImg from "./images/messageapp.png";
+import escapeImg from "./assets/images/escape.jpg";
+import dayplannerImg from "./assets/images/dayplannerapp.jpg";
+import weatherImg from "./assets/images/weather.jpg";
+import messageappImg from "./assets/images/messageapp.png";
+import staytuned from "./assets/images/staytunedtwo.png";
 
 const projects = [
   {
@@ -46,19 +47,19 @@ const projects = [
 
   {
     id: 5,
-    image: "",
+    image: staytuned,
     title: "Project 5",
     description: "Under Construction",
-    repoUrl: "",
+    repoUrl: "https://github.com/jamesosull16",
     appUrl: "",
   },
 
   {
     id: 6,
-    image: "",
+    image: staytuned,
     title: "Project 6",
     description: "Under Construction",
-    repoUrl: "",
+    repoUrl: "https://github.com/jamesosull16",
     appUrl: "",
   },
 ];

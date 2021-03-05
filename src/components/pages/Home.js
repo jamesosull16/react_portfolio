@@ -1,13 +1,12 @@
-import React from 'react'
-import Jumbotron from "../Jumbotron/Jumbotron"
+import React from "react";
+import Blurb from "../Blurb";
 
 function Home() {
-    return (
-        <Jumbotron />
-        
-    )
+  return (
+    <div>
+      <Blurb />
+    </div>
+  );
 }
 
-export default Home
-
-
+export default Home;
