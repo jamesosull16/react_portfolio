@@ -1,8 +1,11 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Grid, Segment, Image, List, Button, Icon } from "semantic-ui-react";
 import Hello from "../assets/images/hellonew.png";
 
 function Header() {
+  const history = useHistory();
+
   return (
     <Segment>
       <Grid columns={2} relaxed='very' stackable>
@@ -25,7 +28,12 @@ function Header() {
           <List divided relaxed>
             <List.Item>
               <List.Content>
-                <Button fluid animated='vertical' href='/home' color='teal'>
+                <Button
+                  fluid
+                  animated='vertical'
+                  onClick={() => history.push("/home")}
+                  color='teal'
+                >
                   <Button.Content hidden>Home</Button.Content>
                   <Button.Content visible>
                     <Icon name='home' />
@@ -35,7 +43,12 @@ function Header() {
             </List.Item>
             <List.Item>
               <List.Content>
-                <Button fluid animated='vertical' href='/projects' color='teal'>
+                <Button
+                  fluid
+                  animated='vertical'
+                  onClick={() => history.push("/projects")}
+                  color='teal'
+                >
                   <Button.Content hidden>Projects</Button.Content>
                   <Button.Content visible>
                     <Icon name='computer' />
@@ -45,7 +58,12 @@ function Header() {
             </List.Item>
             <List.Item>
               <List.Content>
-                <Button fluid animated='vertical' href='/resume' color='teal'>
+                <Button
+                  fluid
+                  animated='vertical'
+                  onClick={() => history.push("/resume")}
+                  color='teal'
+                >
                   <Button.Content hidden>Resume</Button.Content>
                   <Button.Content visible>
                     <Icon name='file alternate outline' />
