@@ -1,0 +1,13 @@
+#root .column {
+  text-align: center;
+}
+
+#root .ui.medium.rounded.image {
+  align-content: center;
+  display: inline;
+}
+
+#header {
+  background-image: url("../../assets/images/waves.jpg");
+  background-size: 100% 100%;
+}

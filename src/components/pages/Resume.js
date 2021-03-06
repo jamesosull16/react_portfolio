@@ -8,7 +8,7 @@ function Resume() {
   return (
     <div className='Resume'>
       <Link to={jamesResume} target='_blank' download>
-        <Button raised ripple animated='vertical' color='yellow'>
+        <Button id="downloadbtn" raised ripple animated='vertical' color='yellow'>
           <Button.Content hidden>Download</Button.Content>
           <Button.Content visible>
             <Icon name='download' />

@@ -1,16 +1,17 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { Grid, Segment, Image, List, Button, Icon } from "semantic-ui-react";
-import Hello from "../assets/images/hellonew.png";
+import Hello from "../../assets/images/hellonew.png";
+import "./header.css";
 
 function Header() {
   const history = useHistory();
 
   return (
     <Segment>
-      <Grid columns={2} relaxed='very' stackable>
+      <Grid columns={2} relaxed='very' stackable id="header">
         <Grid.Column>
-          <Image alt='helloworld' src={Hello} size='medium' rounded />
+          <Image alt='helloworld'id="helloworld" src={Hello} size='medium' rounded />
           <List relaxed divided>
             <List.Item>
               <List.Content>
