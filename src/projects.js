@@ -2,7 +2,7 @@ import escapeImg from "./assets/images/escape.jpg";
 import dayplannerImg from "./assets/images/dayplannerapp.jpg";
 import weatherImg from "./assets/images/weather.jpg";
 import messageappImg from "./assets/images/messageapp.jpg";
-import staytuned from "./assets/images/staytuned.jpg";
+import staytuned from "./assets/images/staytunedtwo.jpg";
 
 const projects = [
   {
