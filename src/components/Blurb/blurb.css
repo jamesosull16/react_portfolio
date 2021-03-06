@@ -1,3 +1,6 @@
 #root .ui.raised.segment {
-  margin: 15px;
+  margin: 75px;
+  font-family: "Lekton", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }

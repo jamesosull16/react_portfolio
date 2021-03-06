@@ -11,3 +11,9 @@
   background-image: url("../../assets/images/waves.jpg");
   background-size: 100% 100%;
 }
+
+#root .header {
+  font-family: "Lekton", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
