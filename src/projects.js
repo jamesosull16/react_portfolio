@@ -3,6 +3,7 @@ import dayplannerImg from "./assets/images/dayplannerapp.jpg";
 import weatherImg from "./assets/images/weather.jpg";
 import messageappImg from "./assets/images/messageapp.jpg";
 import staytuned from "./assets/images/staytunedtwo.jpg";
+import wellness from "./assets/images/wellnessapp.jpg";
 
 const projects = [
   {
@@ -47,11 +48,12 @@ const projects = [
 
   {
     id: 5,
-    image: staytuned,
-    title: "Project 5",
-    description: "Under Construction",
-    repoUrl: "https://github.com/jamesosull16",
-    appUrl: "",
+    image: wellness,
+    title: "Wellness App",
+    description:
+      "A MERN stack application built as part of a team for the final project of the DU Coding Bootcamp.  Utilizing Semantic-UI for the CSS framework and many NPM packages, the goal of the web based application was to have a one stop shop for tracking all health related items, i.e weight, workouts, calorie intake etc.  A colaborative effort where I was responsible for the adding and displaying workouts, the team page and the authorization aspect, it came together and is a continued work in progress.",
+    repoUrl: "https://github.com/jericfey/WellnessApp3.0",
+    appUrl: "https://follaine.herokuapp.com/",
   },
 
   {
